@@ -75,14 +75,6 @@ img {
   padding-bottom: 120px;
 }
 
-.header-list .current::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--color-fifth);
-}
 
 .header-list .current {
   color: var(--color-fifth);
@@ -164,6 +156,7 @@ img {
   background-color: var(--color-fifth);
   border: 1px solid transparent;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   padding: 16px 32px;
   display: inline-block;
@@ -207,6 +200,7 @@ img {
   height: 112px;
   background-color: var(--color-fourth);
   border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .advantage-icon {
@@ -310,24 +304,21 @@ img {
   justify-content: center;
 }
 
-.team-icon-item {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--color-fifth);
-}
-
-.team-icon-item:hover {
-  background-color: var(--color-seventh);
-}
 
 .team-link {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--color-fourth);
+  border-radius: 50%;
+  background-color: var(--color-fifth);
+}
+
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--color-seventh);
 }
 
 .team-icon {
@@ -364,25 +355,23 @@ img {
 }
 
 .customers-link {
-  width: 100%;
-  height: 100%;
+  height: 88px;
+  border: 1px solid var(--color-eighth);
+  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: var(--color-eighth);
 }
 
-.customers-item:hover,
-.customers-link:hover {
+
+.customers-link:hover,
+.customers-link:focus {
  color: var(--color-seventh);
  border-color: var(--color-seventh);
 }
 
 .customers-item {
-  width: 168px;
-  height: 88px;
-  border: 1px solid var(--color-eighth);
-  border-radius: 4px;
   flex-basis: calc((100% - 120px) / 6);
 }
 
@@ -454,7 +443,8 @@ img {
   width: 100%;
 }
 
-.portfolio-links:hover {
+.portfolio-links:hover,
+.portfolio-links:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -464,8 +454,6 @@ img {
   color: var(--color-second);
   margin-bottom: 0;
 }
-
-
 
 /* Footer */
 
@@ -504,23 +492,20 @@ img {
   gap: 16px;
 }
 
-.footer-icon-item {
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 40px;
   background-color: var(--color-second);
   border-radius: 50%;
-}
-
-.footer-link {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--color-fourth);
 }
 
-.footer-icon-item:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: var(--color-tenth);
 }
 
